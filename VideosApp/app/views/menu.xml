@@ -1,0 +1,5 @@
+<Alloy>
+	<View class="container">
+        <Label id="lblClose">Close this</Label>
+	</View>
+</Alloy>

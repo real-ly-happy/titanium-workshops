@@ -1,17 +1,10 @@
 
-// var categories = [
-//     {
-
-//     }
-// ];
 
 require('contentLoader').getCategories(function(err, data){
     if(err) {
         console.log('error loading ' + err);
-        //Ti.API.debug('error loading ' + err);
     }
 
-    //Ti.API.debug('content is ' + JSON.stringify(data));
     var items = [];
 
     for (var i = 0 ; i < 10 && i < data.result.videos.length; i++ ) {
@@ -32,6 +25,16 @@ require('contentLoader').getCategories(function(err, data){
     $.categoriesSection.setItems(items);
 });
 
+$.lblHeaderTitle.addEventListener('click', function(){
+    Ti.API.debug('menu button clicked');
+    $.menuContainer.add(Alloy.createController('menu', {
+        closeMenu: closeMenu
+    }).getView());
+    $.menuContainer.animate({
+        left: 0,
+        duration: 200
+    });
+});
 
 // open detail page on click
 $.videoList.addEventListener('itemclick', function(e){
@@ -56,6 +59,15 @@ var closeDetail = function closeDetail() {
     }, function(){
         $.detailContainer.removeAllChildren();
         $.detailContainer.visible = false;
+    });
+};
+
+var closeMenu = function closeDetail() {
+    $.menuContainer.animate({
+        left: '-99%',
+        duration: 200
+    }, function(){
+        $.menuContainer.removeAllChildren();
     });
 };
 

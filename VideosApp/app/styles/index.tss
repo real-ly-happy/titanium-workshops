@@ -17,6 +17,12 @@
     visible: false
 }
 
+"#menuContainer": {
+    zIndex: 1,
+    left: '-99%',
+    width: Ti.UI.SIZE
+}
+
 "#header": {
     top: 0,
     height: 90,

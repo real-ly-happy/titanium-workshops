@@ -19,8 +19,7 @@
                 </ListView>
             </View>
         </View>
-        <View id="detailContainer" class="viewContainer">
-            
-        </View>
+        <View id="detailContainer" class="viewContainer"/>
+        <View id="menuContainer" class="viewContainer"/>
     </Window>
 </Alloy>
