@@ -1,5 +1,9 @@
 <Alloy>
 	<View class="container">
-        <Label id="lblClose">This is detail</Label>
+        <Label id="lblClose">Close this</Label>
+        <VideoPlayer id="videoPlayer" ns="Ti.Media" top="2" autoplay="false" class="videoContent"/>
+
+
+        <Widget src="webview" id="webviewWidget"></Widget>
 	</View>
 </Alloy>

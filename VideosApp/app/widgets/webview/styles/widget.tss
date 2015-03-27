@@ -1,0 +1,4 @@
+"#webView": {
+    height: 500,
+    width: Ti.UI.FILL
+}

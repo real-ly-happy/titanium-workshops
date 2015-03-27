@@ -1,6 +1,17 @@
 
 ".container" : {
+    top:30,
     width: Ti.UI.FILL,
     height: Ti.UI.FILL,
-    backgroundColor: '#FFF'
+    backgroundColor: '#FFF',
+    layout: 'vertical'
+}
+
+".videoContent": {
+    height: 500,
+    width: Ti.UI.FILL
+}
+
+"#videoPlayer": {
+    height: 300
 }
