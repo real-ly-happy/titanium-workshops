@@ -1,0 +1,34 @@
+
+#viewNews {
+    width: fill;
+    height: fill;
+    background-color: white;
+}
+
+#viewScroll {
+    layout: vertical;
+    content-width: auto;
+    content-height: auto;
+    height: fill;
+}
+
+.defaultLabel {
+    color: red;
+}
+
+.hilightLabel {
+    color: blue;
+}
+
+/*#scrollNewsView {
+    layout: vertical;
+    content-width: fill;
+    content-height: auto;
+    height: 250;
+    width: 200;
+}
+
+#listNews {
+    width: 90%;
+    height: fill;
+}*/

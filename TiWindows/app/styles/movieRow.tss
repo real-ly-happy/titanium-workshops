@@ -1,0 +1,7 @@
+"View": {
+	width: Ti.UI.FILL,
+	height: 50
+},
+"label": {
+	color: "red"
+}

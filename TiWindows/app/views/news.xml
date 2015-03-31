@@ -1,0 +1,24 @@
+<Alloy>
+    <View id="viewNews">
+        <ScrollView id="viewScroll">
+            <Label>news list</Label>
+            <ListView id="listNews">
+                <Templates>
+                    <ItemTemplate name="defaultTemplate">
+                        <View>
+                            <Label bindId="title" class="defaultLabel"/>
+                        </View>
+                    </ItemTemplate>
+                    <ItemTemplate name="highlightTemplate">
+                        <View>
+                            <Label bindId="title" class="hilightLabel"/>
+                        </View>
+                    </ItemTemplate>
+                </Templates>
+                <SearchBar barColor="#000" />
+                <ListSection id="sectionNews" />
+            </ListView>
+            <Button>OK</Button>
+        </ScrollView>
+    </View>
+</Alloy>

@@ -1,0 +1,5 @@
+"#extraView": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "pink"
+}

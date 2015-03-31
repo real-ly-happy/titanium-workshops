@@ -1,0 +1,60 @@
+.container {
+    background-color:white;
+    layout: absolute;
+}
+
+Label {
+    color: white;
+}
+
+#extraViewContainer {
+    width: fill;
+    height: fill;
+}
+
+#mainView {
+    width: fill;
+    height: fill;
+    background-color:yellow;
+}
+
+.othersView {
+    width: fill;
+    height: fill;
+    background-color: blue;
+}
+
+#header {
+    width: fill;
+    height: 50;
+    background-color: red;
+    @media ios {
+        top: 40;
+    }
+    @media android {
+        top: 0;
+    }
+}
+
+#content {
+    width: fill;
+    height: fill;
+    bottom: 60;
+    background-color: green;
+    @media ios {
+        top: 90;
+    }
+    @media android {
+        top: 50;
+    }
+}
+
+#footer {
+    width: fill;
+    height: 60;
+    bottom: 0;
+    background-color: blue;
+}
+
+
+

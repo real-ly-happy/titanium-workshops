@@ -1,0 +1,28 @@
+<Alloy>
+    <Window class="container" top="0" id="mainWindow">
+        <ScrollableView showPagingControl="true">
+            <Require src="my.widget" type="widget" />
+            <Require src="extraView" />
+            <View class="othersView">
+                <TableView id="tableMovies"></TableView>
+            </View>
+            <View id="mainView">
+                <View id="header" platform="ios" formFactor="handheld">
+                    <Label>HEADER IOS</Label>
+                </View>
+                <View id="header" platform="ios" formFactor="tablet">
+                    <Label>HEADER IOS TABLET</Label>
+                </View>
+                <View id="header" platform="android">
+                    <Label>HEADER ANDROID</Label>
+                </View>
+                <View id="content">
+                    <Button onClick="loadNews">Load</Button>
+                </View>
+                <View id="footer">
+                    <Label>Footer</Label>
+                </View>
+            </View>
+        </ScrollableView>
+    </Window>
+</Alloy>

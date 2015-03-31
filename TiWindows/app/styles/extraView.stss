@@ -1,0 +1,5 @@
+#extraView {
+    width: fill;
+    height: fill;
+    background-color: pink;
+}

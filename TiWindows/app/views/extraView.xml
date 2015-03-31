@@ -1,0 +1,5 @@
+<Alloy>
+    <View id="extraView">
+        <Label>Extra View</Label>
+    </View>
+</Alloy>

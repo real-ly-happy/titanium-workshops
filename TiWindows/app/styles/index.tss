@@ -1,0 +1,50 @@
+".container": {
+	backgroundColor: "white",
+	layout: "absolute"
+},
+"Label": {
+	color: "white"
+},
+"#extraViewContainer": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+},
+"#mainView": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "yellow"
+},
+".othersView": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "blue"
+},
+"#header": {
+	width: Ti.UI.FILL,
+	height: 50,
+	backgroundColor: "red"
+},
+"#header[platform=ios]": {
+	top: 40
+},
+"#header[platform=android]": {
+	top: 0
+},
+"#content": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	bottom: 60,
+	backgroundColor: "green"
+},
+"#content[platform=ios]": {
+	top: 90
+},
+"#content[platform=android]": {
+	top: 50
+},
+"#footer": {
+	width: Ti.UI.FILL,
+	height: 60,
+	bottom: 0,
+	backgroundColor: "blue"
+}

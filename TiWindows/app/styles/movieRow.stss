@@ -1,0 +1,10 @@
+
+
+View {
+    width: fill;
+    height: 50;
+}
+
+label {
+    color: red;
+}

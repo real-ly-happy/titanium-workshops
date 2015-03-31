@@ -1,0 +1,17 @@
+"#viewNews": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "white"
+},
+"#viewScroll": {
+	layout: "vertical",
+	contentWidth: "auto",
+	contentHeight: "auto",
+	height: Ti.UI.FILL
+},
+".defaultLabel": {
+	color: "red"
+},
+".hilightLabel": {
+	color: "blue"
+}
