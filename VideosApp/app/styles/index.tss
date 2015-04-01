@@ -1,0 +1,65 @@
+".container": {
+    backgroundColor:"white"
+}
+
+".viewContainer": {
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL
+}
+
+"#homeContainer": {
+    zIndex: 0
+}
+
+"#detailContainer": {
+    zIndex: 1,
+    left: '99%',
+    visible: false
+}
+
+"#header": {
+    top: 0,
+    height: 90,
+    width: Ti.UI.FILL
+}
+
+"#lblHeaderTitle": {
+    left: 35,
+    top: 45,
+    color: '#232323',
+    width: Ti.UI.SIZE,
+    font: {
+        fontWeight: 'bold'
+    }
+}
+
+"#content": {
+    top: 90,
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL
+}
+
+'.categoryTemplate': {
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE
+}
+
+'.categoryView': {
+    width: Ti.UI.FILL,
+    height: 210
+}
+
+'.imgCategory': {
+    width: Ti.UI.FILL,
+    height: 'auto'
+}
+
+'.lblCategory': {
+    color: '#FFFFFF',
+    font: {
+        fontSize: 18
+    }
+}
+
+
+

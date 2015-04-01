@@ -1,0 +1,26 @@
+<Alloy>
+    <Window class="container">
+        <View id="homeContainer" class="viewContainer">
+            <View id="header">
+                <Label id="lblHeaderTitle">Categories</Label>
+            </View>
+            <View id="content">
+                <ListView id="videoList">
+                    <Templates>
+                        <ItemTemplate name="categoryTemplate" class="categoryTemplate">
+                            <View class="categoryView">
+                                <ImageView  class="imgCategory" bindId="imgCategory"/>
+                                <Label class="lblCategory" bindId="lblCategory"/>
+                            </View>
+                        </ItemTemplate>
+                    </Templates>
+
+                    <ListSection id="categoriesSection"/>
+                </ListView>
+            </View>
+        </View>
+        <View id="detailContainer" class="viewContainer">
+            
+        </View>
+    </Window>
+</Alloy>
