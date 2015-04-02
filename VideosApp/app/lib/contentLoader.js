@@ -1,11 +1,12 @@
 
-var sourceUrl = 'http://ws.vipr.startsiden.no/v1/videos';
-var sourceVideoUrl = 'http://ws.vipr.startsiden.no/v1/videos?id=';
-
-
-function ContentLoader(){}
+function ContentLoader(){
+    var self = this;
+    self.sourceUrl = Alloy.CFG.videoListApi;
+    self.sourceVideoUrl = Alloy.CFG.videoApi;
+}
 
 ContentLoader.prototype.getCategories = function (cb) {
+    var self = this;
     var client = Ti.Network.createHTTPClient({
         onload: function(){
             cb(null, JSON.parse(this.responseText));
@@ -15,21 +16,22 @@ ContentLoader.prototype.getCategories = function (cb) {
         },
         timeout: 2000
     });
-    client.open('GET',sourceUrl);
+    client.open('GET',self.sourceUrl);
     client.send();
 };
 
 ContentLoader.prototype.getVideo = function(cb, id) {
+    var self = this;
     // load json from video api
     var client = Ti.Network.createHTTPClient({
         onload: function(){
             var fileName = id + '.json';
             // save to application
-            var file = Ti.Filesystem.getFile(Ti.Filesystem.applicationDirectory, fileName);
+            var file = Ti.Filesystem.getFile(Ti.Filesystem.tempDirectory, fileName);
             file.write(this.responseText);
-            // file.save();
             // parse to object and return
             var video = JSON.parse(file.read().text);
+            //var video = JSON.parse(this.responseText);
             cb(null, video);
         },
         onerror: function(err) {
@@ -37,7 +39,7 @@ ContentLoader.prototype.getVideo = function(cb, id) {
         },
         timeout: 2000
     });
-    client.open('GET',sourceVideoUrl + id);
+    client.open('GET',this.sourceVideoUrl.replace('[:id]',id));
     client.send();
 };
 

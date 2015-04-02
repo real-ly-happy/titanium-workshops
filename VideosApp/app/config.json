@@ -1,5 +1,8 @@
 {
-	"global": {}, 
+	"global": {
+        "videoListApi": "http://ws.vipr.startsiden.no/v1/videos",
+        "videoApi": "http://ws.vipr.startsiden.no/v1/videos?id=[:id]"
+    }, 
 	"env:development": {}, 
 	"env:test": {}, 
 	"env:production": {}, 
